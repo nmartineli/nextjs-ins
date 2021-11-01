@@ -1,10 +1,30 @@
-import styled from 'styled-components'
+import Head from 'next/head';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import AppContainer from '../src/components/AppContainer';
+import Navbar from '../src/components/Navbar';
+import Content from '../src/components/Content';
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://kit.fontawesome.com/ca7edc1854.js"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
+      <Navbar />
+      <Content />
+    </>
+  );
 }
