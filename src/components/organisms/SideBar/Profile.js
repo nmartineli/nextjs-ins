@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ProfilePicture from '../atoms/ProfilePicture';
+import ProfilePicture from '../../atoms/ProfilePicture';
 
 const ProfileElement = styled.div`
   display: flex;

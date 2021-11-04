@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import SideBarProfile from './Profile';
-import Post from './Post';
+import SideBarProfile from '../SideBar/Profile';
+import Post from '../Post';
 
 const Content = styled.main`
   background-color: ${({ theme }) => theme.colors.secondaryBackground};

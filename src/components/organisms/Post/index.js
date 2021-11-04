@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import PostHeader from '../molecules/PostHeader';
-import PostReactionBar from '../molecules/PostReactionBar';
-import PostCaption from '../molecules/PostCaption';
-import PostComment from '../molecules/PostComment';
-import PostDate from '../atoms/PostDate';
-import PostCommentSection from '../molecules/PostCommentSection';
+import PostHeader from '../../molecules/PostHeader';
+import PostReactionBar from '../../molecules/PostReactionBar';
+import PostCaption from '../../molecules/PostCaption';
+import PostComment from '../../molecules/PostComment';
+import PostDate from '../../atoms/PostDate';
+import PostCommentSection from '../../molecules/PostCommentSection';
 
 const PostContainer = styled.section`
   width: 100%;

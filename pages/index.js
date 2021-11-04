@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
-import AppContainer from '../src/components/AppContainer';
-//import Navbar from '../src/components/Navbar';
-import Content from '../src/components/Content';
+import Header from '../src/components/organisms/Header';
+import TimelineContent from '../src/components/organisms/TimelineContent';
 
 export default function Home() {
   return (
@@ -23,8 +22,8 @@ export default function Home() {
           crossOrigin="anonymous"
         ></script>
       </Head>
-
-      <Content />
+      <Header />
+      <TimelineContent />
     </>
   );
 }
