@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
-const ProfilePicture = styled.img`
+const Image = styled.img`
   border-radius: 50%;
-  height: 32px;
 `;
 
-export default () => {
+const ProfilePicture = ({ className }) => {
   return (
-    <ProfilePicture
+    <Image
       src="https://pbs.twimg.com/profile_images/1439720224807391232/_VFWhlQd_400x400.jpg"
       alt="Profile Picture"
       aria-label="Profile Picture"
+      className={className}
     />
   );
 };
+
+export default ProfilePicture;

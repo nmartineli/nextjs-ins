@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SideBarProfile from './Profile';
 import Post from './Post';
 
 const Content = styled.main`
@@ -35,7 +36,9 @@ export default () => {
         <Timeline>
           <Post />
         </Timeline>
-        <LateralBar>perfil</LateralBar>
+        <LateralBar>
+          <SideBarProfile />
+        </LateralBar>
       </Section>
     </Content>
   );

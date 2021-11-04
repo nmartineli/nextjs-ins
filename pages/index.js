@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import AppContainer from '../src/components/AppContainer';
-import Navbar from '../src/components/Navbar';
+//import Navbar from '../src/components/Navbar';
 import Content from '../src/components/Content';
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
           crossOrigin="anonymous"
         ></script>
       </Head>
-      <Navbar />
+
       <Content />
     </>
   );

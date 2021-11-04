@@ -17,6 +17,13 @@ const theme = {
     primaryText: '#262626',
     secondaryText: '#989898',
     alert: '##ED4956',
+    details: '#0095F6',
+  },
+  font: {
+    size: '14px',
+    family: 'Roboto, Helvetica, sans-serif',
+    bold: 700,
+    thin: 100,
   },
 };
 

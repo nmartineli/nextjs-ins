@@ -45,7 +45,7 @@ const Searchbar = styled.input`
   font-size: 13px;
   border-radius: 3px;
   padding: 5px 10px 5px 26px;
-  font-family: 'Roboto';
+  font-family: ${({ theme }) => theme.font.family};
   font-weight: 100;
 `;
 
@@ -92,7 +92,11 @@ export default function NavBar() {
             alt="Activity feed"
             aria-label="Activity feed"
           />
-          <ProfilePictureNav />
+          <ProfilePictureNav
+            src="https://pbs.twimg.com/profile_images/1439720224807391232/_VFWhlQd_400x400.jpg"
+            alt="Profile Picture"
+            aria-label="Profile Picture"
+          />
         </Icons>
       </NavbarContainer>
     </Navbar>
