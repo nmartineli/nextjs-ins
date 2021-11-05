@@ -8,16 +8,14 @@ import PostDate from '../../atoms/PostDate';
 import PostCommentSection from '../../molecules/PostCommentSection';
 
 const PostContainer = styled.section`
-  width: 100%;
+  max-width: 600px;
   border: 1px solid ${({ theme }) => theme.colors.border};
-  margin-bottom: 20px;
-
-  @media (min-width: 600px) {
-    width: 600px;
-  }
+  margin: 0 auto 15px auto;
 `;
 
 const PostImage = styled.img`
+  width: 100%;
+  height: auto;
   max-width: 600px;
 `;
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { AiOutlineCamera } from 'react-icons/ai';
+import { RiMessengerLine } from 'react-icons/ri';
 
 import HeaderButton from '../../atoms/HeaderButton';
 import HeaderSearchInput from '../../atoms/HeaderSearchInput';
@@ -10,7 +11,7 @@ import HeaderMenu from '../../molecules/HeaderMenu';
 const HeaderBar = styled.header`
   height: 44px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
-
+  padding: 2px 16px;
   @media (min-width: 999px) {
     height: 54px;
     padding: 7px 16px;
@@ -20,20 +21,25 @@ const HeaderBar = styled.header`
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   margin: 0 auto;
-  max-width: 935px;
   height: 100%;
+
+  @media (min-width: 935px) {
+    max-width: 935px;
+  }
 `;
 
 const HeaderLogo = styled(Logo)`
   max-height: 29px;
 `;
 
-const CameraButton = styled(HeaderButton)`
-  display: none;
-  @media (max-width: 469px) {
-    display: block;
+const Button = styled(HeaderButton)`
+  display: block;
+  margin: 0;
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
 
@@ -41,11 +47,13 @@ const Header = () => {
   return (
     <HeaderBar>
       <HeaderContainer>
-        <CameraButton>
+        <Button>
           <AiOutlineCamera />
-        </CameraButton>
+        </Button>
         <HeaderLogo />
-
+        <Button>
+          <RiMessengerLine />
+        </Button>
         <HeaderSearchInput />
         <HeaderMenu />
       </HeaderContainer>

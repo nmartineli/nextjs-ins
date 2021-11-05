@@ -11,7 +11,7 @@ const Input = styled.input`
   font-weight: 100;
   display: none;
 
-  @media (min-width: 990px) {
+  @media (min-width: 769px) {
     display: block;
   }
 

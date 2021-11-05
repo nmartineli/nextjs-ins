@@ -5,7 +5,7 @@ import UserNameLink from '../../atoms/UserNameLink';
 
 const Div = styled.div`
   margin-bottom: 2px;
-  padding: 0 16px;
+  padding: 0 7px;
 `;
 
 const PostCaption = () => {

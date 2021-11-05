@@ -9,7 +9,7 @@ import { BsBookmark } from 'react-icons/bs';
 const ReactionDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 0 16px;
 `;
 
 const PostReactionBar = () => {

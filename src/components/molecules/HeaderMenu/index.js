@@ -11,7 +11,11 @@ const HeaderProfilePicture = styled(ProfilePicture)`
 `;
 
 const IconBar = styled.nav`
-  display: flex;
+  display: none;
+
+  @media (min-width: 769px) {
+    display: flex;
+  }
 `;
 
 const Navbar = () => {

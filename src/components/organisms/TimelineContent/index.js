@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SideBarProfile from '../SideBar/Profile';
+import SideBarProfile from '../../molecules/SideBarProfile';
 import Post from '../Post';
 
 const Content = styled.main`
@@ -9,7 +9,7 @@ const Content = styled.main`
 `;
 
 const Section = styled.section`
-  max-width: 935px;
+  max-width: 970px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -18,14 +18,16 @@ const Section = styled.section`
 
 const Timeline = styled.section`
   max-width: 614;
+  margin: 0 auto;
 `;
 
-const LateralBar = styled.aside`
-  width: 293px;
+const SideBar = styled.aside`
   display: none;
 
   @media (min-width: 985px) {
     display: block;
+    width: 293px;
+    margin-top: 20px;
   }
 `;
 
@@ -36,9 +38,9 @@ export default () => {
         <Timeline>
           <Post />
         </Timeline>
-        <LateralBar>
+        <SideBar>
           <SideBarProfile />
-        </LateralBar>
+        </SideBar>
       </Section>
     </Content>
   );

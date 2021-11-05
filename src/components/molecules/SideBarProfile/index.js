@@ -4,14 +4,10 @@ import ProfilePicture from '../../atoms/ProfilePicture';
 const ProfileElement = styled.div`
   display: flex;
   justify-content: row;
+  align-items: center;
 `;
 
-const ProfileImage = styled.img`
-  border-radius: 50%;
-  height: 32px;
-`;
-
-const ProfileUserPicture = styled(ProfileImage)`
+const SideBarPicture = styled(ProfilePicture)`
   padding: 1px;
   height: 56px;
   width: 56px;
@@ -20,27 +16,26 @@ const ProfileUserPicture = styled(ProfileImage)`
 
 const ProfileUser = styled.div`
   font-size: 14px;
+  margin-left: 15px;
 
   & .name {
     color: ${({ theme }) => theme.colors.secondaryText};
+    margin: 0;
   }
 
   & .username {
     color: ${({ theme }) => theme.colors.primaryText};
     font-weight: 700;
+    margin: 0 0 5px 0;
   }
 `;
 
 const SideBarProfile = () => {
   return (
     <ProfileElement>
-      <ProfileUserPicture
-        src="https://pbs.twimg.com/profile_images/1439720224807391232/_VFWhlQd_400x400.jpg"
-        alt="Profile Picture"
-        aria-label="Profile Picture"
-      />
+      <SideBarPicture />
       <ProfileUser>
-        <p className="ProfileUser">nataliamartineli</p>
+        <p className="username">nataliamartineli</p>
         <p className="name">Natalia Martineli</p>
       </ProfileUser>
     </ProfileElement>
