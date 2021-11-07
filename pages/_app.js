@@ -1,4 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { useLayoutEffect, useState } from 'react';
 
 const GlobalStyle = createGlobalStyle`
   body {

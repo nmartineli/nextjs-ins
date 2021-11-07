@@ -6,6 +6,7 @@ import UserNameLink from '../../atoms/UserNameLink';
 const Div = styled.div`
   margin-bottom: 2px;
   padding: 0 7px;
+  background-color: ${({ theme }) => theme.colors.primaryBackground};
 `;
 
 const PostComment = () => {

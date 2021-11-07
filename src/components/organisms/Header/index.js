@@ -12,6 +12,11 @@ const HeaderBar = styled.header`
   height: 44px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   padding: 2px 16px;
+  box-shadow: 0px 3px 7px 1px rgba(138, 138, 138, 0.2);
+  z-index: 50;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
   @media (min-width: 999px) {
     height: 54px;
     padding: 7px 16px;

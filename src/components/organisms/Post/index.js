@@ -11,6 +11,7 @@ const PostContainer = styled.section`
   max-width: 600px;
   border: 1px solid ${({ theme }) => theme.colors.border};
   margin: 0 auto 15px auto;
+  background-color: ${({ theme }) => theme.colors.primaryBackground};
 `;
 
 const PostImage = styled.img`
@@ -23,7 +24,7 @@ export default function Post() {
   return (
     <PostContainer>
       <PostHeader />
-      <PostImage src="https://place-hold.it/600" />
+      <PostImage src="https://via.placeholder.com/600" />
       <PostReactionBar />
       <PostCaption />
       <PostComment />

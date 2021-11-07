@@ -11,8 +11,8 @@ const Button = styled.button`
   }
 `;
 
-const ReactionButton = ({ children }) => {
-  return <Button>{children}</Button>;
+const ReactionButton = ({ children, className }) => {
+  return <Button className={className}>{children}</Button>;
 };
 
 export default ReactionButton;

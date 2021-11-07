@@ -5,6 +5,7 @@ const ProfileElement = styled.div`
   display: flex;
   justify-content: row;
   align-items: center;
+  position: fixed;
 `;
 
 const SideBarPicture = styled(ProfilePicture)`

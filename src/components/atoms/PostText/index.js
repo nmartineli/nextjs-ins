@@ -7,8 +7,8 @@ const Text = styled.span`
   font-size: 14px;
 `;
 
-const PostText = ({ children }) => {
-  return <Text>{children}</Text>;
+const PostText = ({ children, className }) => {
+  return <Text className={className}>{children}</Text>;
 };
 
 export default PostText;
